@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.banner {
+  background-image: url("TCI-background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  background: aliceblue;
+  width: 65%;
+  height: 80%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h1 {
+  padding: 3rem;
+}
+ol {
+  width: 85%;
+  height: 100%;
+  padding: 2rem;
+  list-style: none;
+  counter-reset: count;
+}
+li {
+  line-height: 2.5;
+  font-size: 1.2rem;
+}
+li::before {
+  content: counter(count) ".";
+  counter-increment: count;
+  font-family: sans-serif;
+  color: orangered;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+span {
+  font-size: medium;
+  color: #aaa;
+  margin-left: 2rem;
+}
+.btn {
+  height: 50%;
+}
+.btn button {
+  background-color: #25a569;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: 100%;
+}
+br {
+  margin-left: 2rem;
+}
